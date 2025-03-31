@@ -1,0 +1,263 @@
+/** General rules */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+
+.t-Body-content {
+    min-height: 95vh;
+}
+
+a { 
+  text-decoration: underline;
+}
+a:hover { 
+  text-decoration: underline !important;
+}
+.t-Button--link.t-Button, t-Button--link {
+    text-decoration: underline;
+}
+.t-Footer a {
+    text-decoration: none;
+}
+
+.buttons-size .t-Button-label {
+    font-size: 110%;
+}
+
+.blue-background {
+    background-color: #e8f1f4;
+}
+.blue-background .t-Region-body > .t-LinksList {
+    background-color: #e8f1f4;
+}
+.blue-background div.t-Region-header {
+    background-color: #e8f1f4;
+}
+.blue-background div.t-Region-header .t-Region-title {
+    color: #C12637;
+    font-size: 1.2rem;
+}
+.blue-background H2,
+.blue-background H3 {
+    color: #C12637;
+}
+
+.blue-background.a-Collapsible div.t-Region-header {
+    background-color: #90aec0;
+}
+.blue-background.a-Collapsible div.t-Region-header .t-Region-title {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+div.tools .t-Tabs.t-Tabs--fillLabels .t-Tabs-item a.t-Tabs-link,
+.t-Button--navBar {
+  text-decoration: none;
+}
+
+a#ol-skip-link {
+  display: block;
+  position: absolute;
+  left: -999px;
+  top: -999px;
+}
+
+a#ol-skip-link:focus {
+  left: 0;
+  top: 0;
+  padding: 3px;
+  background: #fff;
+  border:1px solid #C12637;
+}
+
+button.t-Button {
+  border-radius: 6px;
+}
+
+h1.t-HeroRegion-title {
+  color: #C12637; /** RED */
+}
+
+/** Leftside bar */
+
+div.t-Body-side {
+  box-shadow: none;
+  border: none;
+  padding: 0.5rem;
+}
+
+div.t-Body-side div.t-Region {
+  border: none;
+}
+
+div.t-Body-side div.t-Region div.t-Region-bodyWrap {
+  background-color: #e8f1f4;
+  margin-bottom: 2rem;
+}
+
+div.t-Body-side div.t-Region:first-child div.t-Region-header {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+div.t-Body-side div.t-Region div.t-Region-header {
+  background-color: #e8f1f4;
+  border: none;
+}
+
+div.t-Body-side div.t-Region div.t-Region-header h2 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+div.t-Body-side div.t-Region.ol-region-collapsible.t-Region--hideShow div.t-Region-header button.t-Button--hideShow {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 0;
+  box-shadow: none;
+  background-color: #99b7c8;
+  color: #e8f1f4;
+  margin-right: 0.5rem;
+}
+
+div.t-Body-side div.t-Region.ol-region-collapsible.t-Region--hideShow div.t-Region-header span.a-Collapsible-icon::before {
+  content: "\e069";
+}
+
+div.t-Body-side div.t-Region.ol-region-collapsible.t-Region--hideShow.is-expanded div.t-Region-header span.a-Collapsible-icon::before {
+  content: "\e167";
+}
+
+div.t-Body-side div.t-Region.ol-region-collapsible .t-Report--rowHighlight .t-Report-report tr:hover .t-Report-cell,
+div.t-Body-side div.t-Region.ol-region-collapsible .t-Report--rowHighlight .t-Report-report tr:nth-child(odd):hover .t-Report-cell {
+  background-color: #e5e5e6 !important;
+}
+
+/** Content rules - via ETD-241 */
+div.t-IRR-region table th.a-IRR-header,
+div.t-Report table thead th.t-Report-colHead,
+div.t-IRR-region table th.a-GV-header {
+    background: #f4f4f4;
+    border-top: 1px solid #f4f4f4;
+    border-bottom: 1px solid #f4f4f4;
+    border-left: 1px solid #f4f4f4;
+
+    border-right: 1px solid #e9e9e9;
+    color: #006ed0;
+    box-shadow: none;
+}
+div.t-IRR-region table th.a-GV-header button,
+div.t-IRR-region table th.a-IRR-header a.a-IRR-headerLink {
+    background: #f4f4f4;
+    color: #006ed0;
+    border: 0;
+}
+div.t-IRR-controls .t-Form-fieldContainer--radioButtonGroup .apex-item-group--rc input + label,
+div.t-IRR-region.apex-button-group input + label,
+div.t-IRR-controls .t-Button:not(.t-Button--simple),
+div.t-IRR-controls .ui-button, div.t-IRR-region .a-Button {
+    background: #f4f4f4;
+    color: #000000;
+}
+
+/*
+div.t-IRR-region table.a-IRR-table td {
+  padding: 1.2rem 1rem;
+}
+*/
+
+div.t-Report table tbody td.t-Report-cell {
+  padding: 1.2rem 1rem;
+}
+
+/** Footer rules */
+.t-Footer {
+  padding: 0;
+  background-color: #e5e5e6;
+  border: 0;
+  grid-template-columns: 100%;
+}
+
+.t-Footer #ohiolink-footer-message {
+  background-color: #53565a;
+  color: #fff;
+  display: flex;
+}
+
+.t-Footer #ohiolink-footer-message a {
+  color: inherit;
+}
+
+.t-Footer .ol-region-footer .ol-u-header {
+  font-weight: bold;
+}
+
+.t-Footer .ol-region-footer a {
+  color: inherit;
+}
+
+.t-Footer .ol-region-footer {
+    background-color: #e9e9e9;
+}
+
+.t-Footer .t-Footer-body {
+  margin-right: 0;
+}
+
+.t-Footer .t-Footer-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.t-Footer .ol-region-footer p {
+  margin: 0;
+}
+
+.t-Footer .ol-region-footer .container .row {
+  padding: 1rem;
+}
+
+/*
+#QUICK-LINKS .t-Region-body ul {
+    width: 50%;
+    margin: 0 auto 0 auto;
+}
+#QUICK-LINKS .t-Region-body ul li {
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.t-Footer div.ohiolink-footer-quicklinks {
+  background-color: #e8f1f4;
+}
+*/
+
+.t-Footer div.ohiolink-footer-quicklinks div.t-Region {
+  margin: 2rem 1rem;
+}
+
+.t-Footer div.ohiolink-footer-quicklinks ul.t-LinksList > li.t-LinksList-item {
+  border: none;
+}
+
+.t-Footer div.ohiolink-footer-quicklinks ul.t-LinksList > li.t-LinksList-item .t-LinksList-label {
+  padding: 0.2rem 0;
+  text-decoration: underline;
+  color: #696B6D;
+}
+
+.t-Footer div.ohiolink-footer-quicklinks ul.t-LinksList > li.t-LinksList-item a {
+  font-weight: normal;
+}
+
+.t-Footer-apex {
+    display: none;
+}
+
+/* Help question mark icons */
+.t-Form-helpButton .a-Icon {
+    opacity: .75;
+    color: #C12637;
+}

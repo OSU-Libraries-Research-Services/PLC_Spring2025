@@ -1,0 +1,172 @@
+/*[mvallejo, 2016-06-03] OTEJC-295 - Footer design provided by OHTECH*/
+/*
+ * Updated 7/22/2016 - bpowell
+ * OH-TECH SVN: $Id: footer.css 3650 2016-06-28 13:52:11Z apxdev $
+ */
+
+/* Core.min.css overrides -- BP */
+div.t-Body-content {
+  padding-bottom: 0;
+}
+footer.t-Footer {
+  font-size: 13px !important;
+  padding: 0 !important;
+}
+/***/
+
+footer.t-Footer .wrapper {
+  margin: 0 auto 0 auto;
+}
+
+@media (min-width: 1200px) {
+  footer.t-Footer .wrapper {
+    width: 1176px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  footer.t-Footer .wrapper {
+    width: 724px;
+  }
+}
+
+@media (max-width: 767px) {
+  footer.t-Footer .wrapper {
+    width: auto;
+  }
+  #ohiolink-tag-line {
+    visibility: hidden;
+  }
+}
+
+#ohiolink-tag-line {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.row-fluid {
+  width: 100%;
+}
+
+.row-fluid:before,
+.row-fluid:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.row-fluid:after {
+  clear: both;
+}
+
+.row-fluid [class*="span"] {
+  display: block;
+  float: left;
+  width: 100%;
+  min-height: 30px;
+  margin-left: 2%;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.row-fluid [class*="span"]:first-child {
+  margin-left: 2%;
+}
+
+.row-fluid .controls-row [class*="span"] + [class*="span"] {
+  margin-left: 2%;
+}
+
+.row-fluid .span4 {
+  width: 31%;
+  min-width: 300px;
+}
+
+.wrapper:before, .wrapper:after, .wrapper-fluid:before, .wrapper-fluid:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.application-version {
+  margin-left: 2%;
+}
+
+footer {
+  display: block;
+  font-family: Helvetica,Arial,sans-serif;
+  line-height: 22px;
+}
+/***************
+ * Site Footer *
+ ***************/
+#footer.full {
+  padding: 15px;
+  background: #525051;
+}
+
+footer#footer a {
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+}
+footer#footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+#footer-message {
+  color: #d9d9d9;
+  margin: 5px auto 5px auto;
+  text-align: center;
+}
+
+.htl-apart {
+  padding: 0 0.35em;
+  opacity: 0.3;
+}
+
+/* The first links in the header (report a problem ...) */
+.cont-item {
+  margin-top: 8px;
+}
+.cont-item a {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Phone breakpoint. */
+@media (max-width: 480px) {
+  #footer-message .htl-apart {
+    display: none;
+  }
+  #footer-message > div > span {
+    display: block;
+  }
+}
+
+#ohtech-footer-message {
+  background-color: #e9e9e9;
+  padding: 0 15px 0 15px;
+}
+
+#ohtech-footer-message a {
+  text-decoration: none;
+  color: #555555;
+  white-space: nowrap;
+}
+#ohtech-footer-message a:hover {
+  text-decoration: underline;
+  color: #555555;
+}
+
+.h5 {
+  font-size: 13px;
+  text-transform: uppercase;
+  margin: 21px 0 0 0;
+  font-weight: bold;
+  color: #555;
+  text-rendering: optimizelegibility;
+}

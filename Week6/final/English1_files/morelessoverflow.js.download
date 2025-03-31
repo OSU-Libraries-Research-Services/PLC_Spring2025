@@ -1,0 +1,70 @@
+var defaultMinimizedHeight = 200;
+
+setupMoreLessOverflow = function() {
+  $('div.more-less-overflow').each(function(i, elem) {
+    $elem = $(elem);
+    var minimizedHeight = Number($elem.data('less-height'));
+    if (isNaN(minimizedHeight)) {
+      minimizedHeight = defaultMinimizedHeight;
+    }
+    if ($elem.height() > minimizedHeight) {
+      $elem.css({
+        "overflow": "hidden",
+        "height": minimizedHeight
+      })
+      .wrap('<span class="more-less-overflow-container" />')
+      .parent().append('<span class="more-less-overflow-controls"><span class="more-less-overflow-elipses">...</span><a class="more-less-overflow-more" href="#" onclick="showMoreOverflow(this); return false;">More</a><a class="more-less-overflow-less" href="#" onclick="showLessOverflow(this); return false;" style="display: none; margin-left: 5px;">Less</a></span>');
+    }
+  });
+};
+
+showMoreOverflow = function(moreLink) {
+  var $moreLink = $(moreLink);
+  $moreLink
+    .parents('span.more-less-overflow-container')
+    .find('div.more-less-overflow')
+    .css({
+      'height': 'auto',
+      'display': 'inline'
+    });
+    
+  $moreLink
+    .css('display', 'none')
+    .parent().find('a.more-less-overflow-less')
+    .css('display', '')
+    .parent().find('span.more-less-overflow-elipses')
+    .css('display', 'none');
+};
+
+showLessOverflow = function(lessLink) {
+  var $lessLink = $(lessLink);
+  var $lessDiv = $lessLink
+    .parents('span.more-less-overflow-container')
+    .find('div.more-less-overflow');
+  var minimizedHeight = Number($lessDiv.data('less-height'));
+  if (isNaN(minimizedHeight)) {
+    minimizedHeight = defaultMinimizedHeight;
+  }
+  
+  $lessDiv.css({
+      'height': minimizedHeight,
+      'display': 'block'
+    });
+    
+  $lessLink
+    .css('display', 'none')
+    .parent().find('a.more-less-overflow-more')
+    .css('display', '')
+    .parent().find('span.more-less-overflow-elipses')
+    .css('display', '');
+};
+
+destroyMoreLessOverflow = function() {
+  $('span.more-less-overflow-controls').remove();
+  $('div.more-less-overflow')
+    .css({
+      'display': 'block',
+      'height': 'auto'
+    })
+    .unwrap();
+};

@@ -1,0 +1,448 @@
+/***********************************************************************************************************************
+ * ETD-SEARCH rules
+ **********************************************************************************************************************/
+
+/** General **/
+.t-Login-logo {
+  background-image: url(/c/logos/OhioLINK-logo.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 380px;
+  height: 100px;
+  margin: 0 auto 0 auto;
+}
+
+.t-Header-branding {
+    min-height: 61px;
+}
+.t-Header-logo-link, a.t-Header-logo-link:hover {
+    text-decoration: none;
+}
+
+#t_Button_navControl {
+    display: none;
+}
+
+div.banner {
+  margin-bottom: -5rem;
+  margin-top: 80px;
+}
+
+div.banner .etd_title {
+  color: #C12637;
+  margin: 0 0 0 7.4rem;
+  font-weight: bolder;
+}
+
+div.banner .etd_secondary_title {
+  color: #53565a;
+  margin: 0 0 2rem 7.4rem;
+  font-size: 1.2rem;
+}
+
+div.banner div#banner-logo {
+  float: left;
+  width: 115px;
+  overflow: hidden;
+  margin-left: 0;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+#RECENT-ADDITIONS .t-Region-header {
+    border-bottom: 0;
+}
+
+#search_banner {
+    margin: 0 auto 0 auto;
+}
+
+.t-Body-title { border-bottom: 0; }
+.red-text { color: #C12637; }
+.t-Body-contentInner {
+    padding: 0;
+}
+
+.transparent {
+    background-color: rgba(255,255,255,0);
+}
+
+#inst-report {
+    /* overflow:scroll; /* looks bad */
+    height:450px
+}
+
+#inst-report .t-BadgeList-item {
+    height: 30pt;
+    margin: 0;
+    padding: 5px 5px 5px 5px;
+}
+#inst-report .t-BadgeList-item::after, .t-BadgeList-item::before {
+    top: 0;
+    bottom: 0;
+    width: 0;
+    right: 0;
+}
+#inst-report .t-BadgeList-item a {
+    text-decoration: underline;
+    text-align: left;
+}
+#results_search {
+    margin-top: -55px;
+}
+
+#P1001_SEARCH_CONTAINER {
+    margin-left: 5px;
+}
+#P10_PERMALINK_CONTAINER .t-Form-labelContainer {
+    text-align:left;
+}
+
+.search-left-col {
+    max-width:640px;
+    min-width:15em;
+}
+
+
+/* div.left-sidebar div.t-Region.blue-box.t-Region--hideShow > div.t-Region-header button { */
+/**********************************  Search Results sidebar *********/
+#search_sidebar .a-FS-toggle {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 0;
+    box-shadow: none;
+    background-color: #99b7c8;
+    color: #ebf1f4;
+}
+
+#search_sidebar .ui-state-default,
+#search_sidebar .ui-widget-content .ui-state-default,
+#search_sidebar .ui-widget-header .ui-state-default {
+  background-color: #99b7c8;
+  border-color: #99b7c8;
+  color: #53565a;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.0125) inset;
+}
+
+#ADVANCED_SEARCH_BUTTON {
+    margin-left: -4rem;
+}
+
+#YEAR_FILTER .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#search_sidebar .ui-widget-header {
+  background-color: #ffffff;
+}
+#search_sidebar .ui-slider-horizontal {
+    height: 0.9em;
+}
+#search_sidebar .ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 9;
+    width: 1.0em;
+    height: 1.4em;
+}
+
+#search_sidebar .a-FS-totalArea {
+    font-size: 1.1em;
+    color: #53565a;
+}
+
+#search_sidebar_fr_search_btn {
+    background-color: #C12637;
+    color: #fff;
+}
+.a-FS-search {
+    display: none;
+}
+#search_sidebar H3, #search_sidebar H4,
+#search_sidebar div.t-Region-header .t-Region-title,
+#search_sidebar div.t-Region-header {
+    color: #022154;
+}
+
+
+
+#P1001_SUBJECT_FACET_CONTAINER .t-Form-itemText.t-Form-itemText--pre {
+    width: 100%;
+}
+
+/* Comment out to make bg image stretch to whole window - bpowell
+body {
+    background-size: auto;
+}
+*/
+
+#P1001_SEARCH_BUTTON, #P1001_SEARCH_BUTTON > span.t-Icon, button.t-Button.search-icon-header.basic-search-component > span.t-Icon {
+    padding: 0;
+    margin: 0;
+    min-width: 3.2rem;
+    min-height: 3rem;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+#search_sidebar .container .t-Region-header,
+#search_sidebar .container .t-Region-title,
+#search_sidebar .container .a-FS-header {
+    font-weight: normal;
+    font-size: 0.8rem;
+    color: #022154;
+    background-color: #e8f1f4;
+}
+
+#search_sidebar .a-FS-control.is-expanded .a-Icon.a-Collapsible-icon::before {
+    content: '\e167';
+}
+#search_sidebar .a-FS-control.is-collapsed .a-Icon.a-Collapsible-icon::before {
+    content: '\e069';
+}
+
+/* .t-Form-fieldContainer--radioButtonGroup .apex-item-group--rc input + label, .apex-button-group input + label, .t-Button:not(.t-Button--simple), .ui-button, .a-Button, .a-Button.a-Button--popupLOV, .a-IG-button.a-IG-button--controls { */
+#search_sidebar .t-Button.t-Button--icon.t-Button--hideShow {
+    color: #ffffff;
+    /* background-color: #a2c0cf; */
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.125) inset;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 0;
+    box-shadow: none;
+    background-color: #99b7c8;
+    color: #ebf1f4;
+}
+
+#YEAR_FILTER {
+    border-bottom: 1px #d5dde0 solid !important;
+}
+
+#search_sidebar .t-Region-body {
+    padding: 8px;
+    padding-top: 0;
+}
+
+/*************************** END Search results sidebar ************/
+
+.t-SearchResults-inner {
+    display: flex;
+    align-items: center;
+    background-color: #e5e5e6;
+    float: unset;
+    clear: unset;
+    width: 100%;
+    padding: 0;
+    border: none;
+}
+.t-SearchResults-checkbox {
+    text-align: center;
+    width: 48px;
+}
+
+.t-SearchResults-content {
+    background-color: #fff;
+    padding: 1rem;
+    width: 100%;
+}
+
+.t-SearchResults-author {
+    font-weight: bold;
+}
+.t-SearchResults-item {
+    border-top:  1px black solid;
+    margin-top:  0;
+    padding-top: 0;
+    margin-bottom: 3px;
+}
+
+.t-SearchResults-degree {
+    margin: 0 0 0.4rem;
+}
+
+h3.t-SearchResults-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.tiny-note {
+    font-size: smaller;
+    color: #696B6D;
+    font-style: italic;
+}
+
+input.SEARCH_FIELD {
+  background-color: #fbfbfb;
+  margin-right: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.0rem;
+
+/*
+  margin-left: 11rem;
+  margin-top: -8px;
+  padding-left: 1rem;
+  height: 3.9rem;
+*/
+
+  margin-left: 7.4rem;
+  margin-top: 16px;
+  padding-left: 1rem;
+  height: 2.2rem;
+}
+
+div.file-display,
+div.file-display div.t-Region-header {
+    background-color: rgba(255,255,255,0);
+}
+div.file-display div.t-Region-header h2 {
+    padding-left: 1rem;
+}
+div.file-display div.file-box {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  font-weight: bold;
+}
+
+div.abstract-display label.t-Form-label {
+    font-weight: bold;
+}
+div.abstract-display div.t-Form-inputContainer .display_only {
+    font-weight: normal;
+}
+
+
+/*
+ * Common - top region, tools
+ * Top Region is the wrapper region, set the following properties:
+ *   - Remove body padding
+ *   - Hidden title
+ *   - Remove borders
+ *
+ * Tools is a List region with the following properties:
+ *   - Region must have the class tools.
+ *   - List items have icons on the left of the text. These are inserted using
+ *     placeholder #A01# and with the icon class named in the corresponding field.
+ *   - List template - Tabs
+ *   - List template options - Large, Fill Labels
+ */
+div.tools .t-Region-header h2.t-Region-title {
+  font-weight: normal;
+  color: #53565a;
+}
+
+div.tools .t-Tabs.t-Tabs--fillLabels {
+  border-radius: 0;
+  border: 0;
+  color: #071d49;
+}
+
+div.tools .t-Tabs.t-Tabs--fillLabels .t-Tabs-item .t-Tabs-link {
+  border-radius: 0;
+  border: 0;
+  background-color: #e5e5e6;
+  color: #071d49;
+}
+
+div.tools .t-Tabs.t-Tabs--fillLabels .t-Tabs-item a.t-Tabs-link:focus {
+  box-shadow: 0px 3px 0px 0px #99b7c8;
+}
+
+div.tools .t-Tabs.t-Tabs.t-Tabs--fillLabels.t-Tabs--inlineIcons .t-Tabs-item .t-Icon {
+  display: inline;
+}
+
+div.tools .t-Tabs.t-Tabs--fillLabels .t-Tabs-item .t-Tabs-link .t-Tabs-label {
+  text-decoration: underline;
+}
+/* End common - top region, tools */
+
+/* Browse list pages */
+div.browse-page {
+  width: 100%;
+  clear:both;
+}
+section.uRegion p.browse-item, p.browse-item {
+  margin-top: 20px;
+}
+
+div.browse-page > div.browse-column-1,
+div.browse-page > div.browse-column-2,
+div.browse-page > div.browse-column-3,
+div.browse-page > div.browse-column-4,
+div.browse-page > div.browse-column-5 {
+  float: left;
+  padding:6px;
+}
+div.browse-column-1 { margin: 0 0 10px 6px; }
+div.browse-column-2 { margin: 0 0 10px 6px; }
+div.browse-column-3 { margin: 0 0 10px 6px; }
+div.browse-column-4 { margin: 0 0 10px 6px; }
+div.browse-column-5 { margin: 0 0 10px 6px; }
+
+@media only screen and (min-width: 641px) {
+  #SEARCH_BUTTON,
+  #SEARCH_BUTTON > span.t-Icon,
+  button.t-Button.search-icon-header.basic-search-component > span.t-Icon {
+    padding: 0;
+    margin: 0;
+    min-width: 3.2rem;
+    min-height: 3rem;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    border-radius: 50%;
+    vertical-align: middle;
+  }
+}
+
+@media only screen and (max-width: 641px) {
+  .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9 {
+    width: 100%;
+  }
+  .search-right-col {
+      width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1080px) {  /* why 1080?  It just works out that way... */
+  .etd_title { font-size: 2rem; }
+  #inst-report { height: auto; }
+  #inst-report .t-BadgeList-item {
+    height: 60pt;
+    padding: 3px 1px 3px 1px;
+  }
+
+  #GLOBALSEARCH { margin-top: 10px; }
+  input.SEARCH_FIELD { margin-left: 1px; width: 100%; }
+  div.banner { float: none; margin-left: 1px; }
+  .etd_title { margin-left: 1px; }
+
+  #ADVANCED_SEARCH_BUTTON { margin-left: 0.5rem !important; }
+  #GOTO_FAQ               { margin-left: 0.5rem !important; }
+  #INSTITUTIONS_BUTTON    { margin-left: 0.5rem !important; }
+  input.SEARCH_FIELD      { margin-top: 0 !important; }
+
+  .search-left-col {
+      max-width:100%;
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 1px;
+      padding-right: 1px;
+  }
+  .search-right-col {
+      width: 65%;
+      margin-right: 0;
+      margin-left: 0;
+      padding-left: 1px;
+      padding-right: 1px;
+  }
+  .search-left-col .t-Form-labelContainer {
+      padding-left: 0;
+  }
+  .search-facets-wrap {
+      width:100%;
+      margin-left: 1rem;
+  }
+}

@@ -1,0 +1,37 @@
+/*
+ * jQuery based code to slide open and closed, a section of FAQ text.
+ * This is used for any FAQ wab page that uses this HTML for the FAQ
+ * Entries:
+ * 
+ *  <div class="faq_q">
+ *    <A HREF="#" OnClick="hideShowFAQ('1'); return false;"> Question Text </A></div>
+ *  <div class="faq_a" style="display:none" aria-hidden="true" id="FAQA1">
+ *    <P>Answer Text</P>
+ *  </div>
+ *
+ * $Id: hideShowFAQ.js 18811 2021-05-05 14:46:57Z bpowell $
+ * -- Brian Powell
+ */
+function hideShowFAQ(id) {
+    var content = $('#FAQA'+id);
+
+    if (content.css('display') == 'none') {
+    content.slideDown("slow","swing");
+    content.attr("aria-hidden", "false");
+    // content.show();
+    } else {
+    content.slideUp("slow","swing");
+    content.attr("aria-hidden", "true");
+    // content.hide();
+    }
+}
+
+function show_all_answers() {
+  $('.faq_a').show();
+  $('.faq_a').attr("aria-hidden", "false");
+}
+function hide_all_answers() {
+  $('.faq_a').hide();
+  $('.faq_a').attr("aria-hidden", "true");
+}
+
